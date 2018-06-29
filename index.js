@@ -44,22 +44,16 @@ describe('logWhisper(string)', function() {
     console.log.restore()
   })
 })
-function sayHiToGrandma(lowercase) {
-  return "I can't hear you!"
-}
+
 describe('sayHiToGrandma(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
     expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
   })
-function sayHiToGrandma(Uppercase) {
-  return "YES INDEED!"
-}
+
   it('returns "YES INDEED!" if `string` is uppercase', function() {
     expect(sayHiToGrandma('HELLO')).toEqual("YES INDEED!")
   })
-function sayloveToGrandma(string) {
-  return "I love you, too.";
-}
+
   it('returns "I love you, too." if `string` is "I love you, Grandma."`', function() {
     expect(sayHiToGrandma("I love you, Grandma.")).toEqual("I love you, too.")
   })
