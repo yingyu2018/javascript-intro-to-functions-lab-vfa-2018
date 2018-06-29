@@ -28,8 +28,8 @@ describe('logShout(string)', function() {
     console.log.restore()
   })
 })
-function logWhisper(string) {
-  return console.log().toLowerCase
+function logShout(string) {
+  console.log(string.toLowerCase) 
 }
 describe('logWhisper(string)', function() {
   it('calls console.log() its one argument in all lowercase', function() {
